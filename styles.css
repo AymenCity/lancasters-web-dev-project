@@ -1,0 +1,19 @@
+
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+  font-family: Helvetica;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: Helvetica;
+  font-size: 160%;
+}
+
+/*
+https://www.w3schools.com/html/html_css.asp - css
+https://www.w3schools.com/html/html5_semantic_elements.asp - semantics
+*/
