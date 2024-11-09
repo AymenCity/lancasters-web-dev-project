@@ -14,7 +14,7 @@ header {
 }
 
 header > img { /* logo image */
-  height: 70px;
+  height: 60px;
   width: auto;
 }
 
@@ -31,9 +31,9 @@ nav a { /* properties of nav a text */
   text-decoration: none; /* Take away the default link styling  */
   color: rgb(255, 255, 255);
   font-family: Helvetica;
-  font-size: 120%;
+  font-size: 125%;
   border-bottom: 2px solid transparent;
-  margin-left: 1cm;
+  margin-left: 1.25cm;
 }
 
 nav a:hover { /* line underneath nav text when u hover it - highlights where user will click */
@@ -46,23 +46,74 @@ body {
 }
 
 main {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center; /* Vertically center items */
   padding: 2rem;
 }
 
-h1 {
+.text {
+  margin-right: 4rem;
+}
+
+figure {
+  margin: 0; /* Remove any default margin */
+}
+
+figure img {
+  max-width: 700px; /* You can set a max-width for the image */
+  height: auto; /* Maintain aspect ratio */
+}
+
+main h1 {
   color: rgb(0, 0, 0);
   font-family: Helvetica;
   font-size: 300%;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
-p {
+main p {
+  margin-top: 25px; /* https://generatepress.com/forums/topic/spacing-between-heading-and-paragraph/ */
   color: rgb(0, 0, 0);
   font-family: Helvetica;
   font-size: 160%;
+  font-style: italic;
+}
+
+.menu_button {
+  background-color: #ffffff;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 15px 2px;
+  cursor: pointer;
+}
+
+.res_button {
+  background-color: #000000;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 20px 34px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: Helvetica;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 /*
 https://www.w3schools.com/html/html_css.asp - css
 https://www.w3schools.com/html/html5_semantic_elements.asp - semantics
 https://stackoverflow.com/questions/77718681/header-with-a-logo-and-a-nav-bar-items-in-one-line - css code for header (nav + logo)
+https://codedamn.com/news/frontend/how-to-put-image-and-text-side-by-side-in-html - flexbox (text left side, img right side)
+https://www.reddit.com/r/html5/comments/u7o29l/how_to_create_a_button_that_works_as_a_link_to/?rdt=43058 - menu buttons
+
 *//*# sourceMappingURL=styles.css.map */
