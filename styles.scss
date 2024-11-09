@@ -17,6 +17,11 @@
     height: 60px;
     width: auto; 
   }
+
+  .menu_img {
+    height: 1725px;
+    width: auto; 
+  }
   
   nav { /* alligns nav text to be horizontally center */
     display: flex;
@@ -58,7 +63,7 @@
     margin: 0; /* Remove any default margin */
   }
   
-  figure img {
+  .main_img {
     max-width: 670px; /* You can set a max-width for the image */
     height: auto; /* Maintain aspect ratio */
   }
