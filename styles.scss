@@ -32,7 +32,7 @@
     font-family: Helvetica;
     font-size: 125%;
     border-bottom: 2px solid transparent;
-    margin-left: 1.25cm;
+    margin-left: 1cm;
   }
   nav  a:hover { /* line underneath nav text when u hover it - highlights where user will click */
     border-bottom: 2px solid rgb(255, 255, 255);
@@ -59,7 +59,7 @@
   }
   
   figure img {
-    max-width: 700px; /* You can set a max-width for the image */
+    max-width: 670px; /* You can set a max-width for the image */
     height: auto; /* Maintain aspect ratio */
   }
   
@@ -75,27 +75,30 @@
     margin-top: 25px; /* https://generatepress.com/forums/topic/spacing-between-heading-and-paragraph/ */
     color: rgb(0, 0, 0);
     font-family: Helvetica;
-    font-size: 160%;
+    font-size: 200%;
     font-style: italic;
   }
 
   .menu_button {
     background-color: #ffffff; 
     border: 2px solid black; 
+    border-radius: 0.5rem;
     color: rgb(0, 0, 0); 
-    padding: 20px 34px; 
+    padding: 20px 34px; /* size of button */
     text-align: center; 
     text-decoration: none; 
     display: inline-block;
     font-family: Helvetica; 
     font-size: 20px; 
     margin: 15px 2px; 
+    margin-right: 0.5cm;
     cursor: pointer; 
   }
 
   .res_button {
     background-color: #000000; 
     border: none; 
+    border-radius: 0.5rem;
     color: rgb(255, 255, 255); 
     padding: 20px 34px; 
     text-align: center; 
