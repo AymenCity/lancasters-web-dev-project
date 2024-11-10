@@ -6,6 +6,7 @@
   /* header + nav: https://stackoverflow.com/questions/77718681/header-with-a-logo-and-a-nav-bar-items-in-one-line */
   header {
     display: flex;
+    width: 200%;
     flex-direction: row; 
     justify-content: flex-start; 
     background-color: rgb(0, 0, 0);
@@ -128,8 +129,9 @@
   }
 
   footer {
-    position: relative; /* https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022 */
+    position: fixed; /* https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022 */
     height: 100px;
+    width: 100%;
     margin-top: -50px;
     clear: both;
     display: flex;
@@ -176,12 +178,14 @@
 
 /* about page */
 .about h1 {
-  margin: 1rem;
+  text-align: center;
+  margin-right: 0.5rem;
 }
 
 .about p {
   font-size: 150%;
-  margin: 2.75rem;
+  margin: 3rem;
+  font-style: normal;
 }
 
 
