@@ -137,6 +137,42 @@ footer {
   padding: 0.5rem 1rem;
 }
 
+/* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
+.fa-brands {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-top: 0.2cm;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  margin-left: 33px;
+}
+
+.fa-youtube:hover {
+  background: #ff0000;
+  color: rgb(255, 255, 255);
+}
+
+.fa-instagram:hover {
+  background: #125688;
+  color: white;
+}
+
+.fa-tiktok:hover {
+  background-color: rgb(255, 20, 147);
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 /*
 https://www.w3schools.com/html/html_css.asp - css
 https://www.w3schools.com/html/html5_semantic_elements.asp - semantics
