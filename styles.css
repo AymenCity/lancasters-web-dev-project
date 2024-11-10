@@ -18,6 +18,12 @@ header > img { /* logo image */
   width: auto;
 }
 
+#title {
+  margin-top: -20px;
+  font-size: 455%;
+  text-decoration: overline;
+}
+
 .menu_img {
   height: 1725px;
   width: auto;
@@ -42,7 +48,7 @@ nav a { /* properties of nav a text */
 }
 
 nav a:hover { /* line underneath nav text when u hover it - highlights where user will click */
-  border-bottom: 2px solid rgb(255, 255, 255);
+  border-bottom: 3px solid rgb(255, 255, 255);
   transition: border-bottom 0.4s ease-in;
 }
 
@@ -54,7 +60,7 @@ main {
   display: flex;
   justify-content: space-between; /* Distribute space between items */
   align-items: center; /* Vertically center items */
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .text {
@@ -66,8 +72,9 @@ figure {
 }
 
 .main_img {
-  max-width: 670px; /* You can set a max-width for the image */
+  max-width: 540px; /* You can set a max-width for the image */
   height: auto; /* Maintain aspect ratio */
+  margin-top: -50px;
 }
 
 main h1 {
@@ -89,25 +96,25 @@ main p {
 .menu_button {
   background-color: #ffffff;
   border: 2px solid black;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   color: rgb(0, 0, 0);
-  padding: 20px 34px; /* size of button */
+  padding: 20px 30px; /* size of button */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-family: Helvetica;
   font-size: 20px;
   margin: 15px 2px;
-  margin-right: 0.5cm;
+  margin-right: 0.3cm;
   cursor: pointer;
 }
 
 .res_button {
   background-color: #000000;
-  border: none;
-  border-radius: 0.5rem;
+  border: 2px solid black;
+  border-radius: 1rem;
   color: rgb(255, 255, 255);
-  padding: 20px 34px;
+  padding: 20px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -115,6 +122,19 @@ main p {
   font-size: 20px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+footer {
+  position: relative; /* https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022 */
+  height: 100px;
+  margin-top: -50px;
+  clear: both;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: rgb(0, 0, 0);
+  border-bottom: solid;
+  padding: 0.5rem 1rem;
 }
 
 /*
