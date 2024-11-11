@@ -189,6 +189,14 @@ footer {
   font-style: normal;
 }
 
+.award_img {
+  height: 35px;
+  width: auto;
+  margin: 0.25rem;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+}
+
 /*
 https://www.w3schools.com/html/html_css.asp - css
 https://www.w3schools.com/html/html5_semantic_elements.asp - semantics
