@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -19,10 +20,10 @@ header > img { /* logo image */
   width: auto;
 }
 
-#title {
+#underline {
   margin-top: -20px;
   font-size: 455%;
-  text-decoration: overline;
+  text-decoration: underline;
 }
 
 .menu_img {
@@ -57,15 +58,11 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-main {
+.wide_main {
   display: flex;
-  justify-content: space-between; /* Distribute space between items */
-  align-items: center; /* Vertically center items */
+  justify-content: space-between;
+  align-items: center;
   padding: 3rem;
-}
-
-.text {
-  margin-right: 4rem;
 }
 
 figure {
@@ -76,6 +73,11 @@ figure {
   max-width: 540px; /* You can set a max-width for the image */
   height: auto; /* Maintain aspect ratio */
   margin-top: -50px;
+}
+
+.google_img {
+  max-width: 660px; /* You can set a max-width for the image */
+  height: auto; /* Maintain aspect ratio */
 }
 
 main h1 {
@@ -145,7 +147,7 @@ footer {
 }
 
 /* https://www.w3schools.com/howto/howto_css_social_media_buttons.asp */
-.fa-brands {
+.fa-brands, .fa-solid {
   padding: 20px;
   font-size: 30px;
   width: 30px;
@@ -177,7 +179,7 @@ footer {
   background-color: rgb(255, 20, 147);
 }
 
-/* about page */
+/* headings & paragraphs - different sizes for different pages */
 .about h1 {
   text-align: center;
   margin-right: 0.5rem;
@@ -189,12 +191,43 @@ footer {
   font-style: normal;
 }
 
+.contact p {
+  font-size: 120%;
+  margin: 3rem;
+  font-style: normal;
+  margin: 0; /* https://stackoverflow.com/questions/2787310/how-to-reduce-the-space-between-p-tags */
+}
+
+.contact li {
+  font-size: 120%;
+  margin: 3rem;
+  font-style: normal;
+  margin-top: 25px; /* https://generatepress.com/forums/topic/spacing-between-heading-and-paragraph/ */
+  color: rgb(0, 0, 0);
+  font-family: Helvetica;
+  margin: 1.25rem;
+  margin-left: 2rem;
+}
+
 .award_img {
   height: 35px;
   width: auto;
   margin: 0.25rem;
   margin-left: 5rem;
   margin-top: 1.5rem;
+}
+
+/* https://stackoverflow.com/questions/46802769/style-bullet-list-with-arrows */
+ul {
+  position: relative;
+  list-style: none;
+  margin-left: 7rem;
+}
+
+li::before {
+  content: "⮕";
+  position: absolute;
+  left: 0;
 }
 
 /*
