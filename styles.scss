@@ -67,7 +67,7 @@
   }
   
   .main_img {
-    max-width: 540px; /* You can set a max-width for the image */
+    width: 100%; /* https://www.w3schools.com/howto/howto_css_image_responsive.asp */
     height: auto; /* Maintain aspect ratio */
     margin-top: -50px;
   }
@@ -130,7 +130,7 @@
   }
 
   footer {
-    position: fixed; /* https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022 */
+     /* https://forum.freecodecamp.org/t/how-to-keep-footer-at-bottom-of-the-page/651022 */
     height: 100px;
     width: 100%;
     margin-top: -50px;
@@ -248,11 +248,27 @@ li::before {
   vertical-align: middle;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media (max-width: 800px) {
-  .column {
+@media (max-width: 800px) { 
+  .column { /* makes a two column-layout instead of four columns */
     flex: 50%;
     max-width: 50%;
+  }
+
+  main h1 {
+    font-size: 100%;
+  }
+  
+  main p {
+    font-size: 100%;
+  }
+
+  #underline {
+    font-size: 200%;
+  }
+
+  .menu_button, .res_button {
+    padding: 10px 15px; /* size of button */
+    font-size: 70%;
   }
 }
 
@@ -288,6 +304,22 @@ li::before {
     margin-left: 0;
   }
 }
+
+  footer {
+    flex-direction: row; 
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .fa-brands, .fa-solid {
+    margin-left: 10px; /* Adjust icon spacing */
+  }
+
+  .award_img {
+    height: 20px;
+    width: auto; 
+
+  }
 
 
 
