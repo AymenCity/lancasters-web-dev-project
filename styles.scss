@@ -26,8 +26,11 @@
   }
 
   .menu_img {
-    height: 1725px;
-    width: auto; 
+    width: 100%; 
+    height: auto;
+    padding: 4px 4px;
+    margin-bottom: 50px;
+    border-radius: 20px;
   }
   
   nav { /* alligns nav text to be horizontally center */
