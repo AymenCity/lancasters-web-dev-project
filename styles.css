@@ -250,37 +250,58 @@ li::before {
   vertical-align: middle;
 }
 
-@media (max-width: 800px) {
+/* RESPONSIVE LAYOUT
+/* Medium device */
+@media (max-width: 768px) {
   .column { /* makes a two column-layout instead of four columns */
     flex: 50%;
     max-width: 50%;
   }
   main h1 {
-    font-size: 100%;
+    font-size: 150%;
   }
   main p {
-    font-size: 100%;
+    font-size: 140%;
+  }
+  #underline {
+    font-size: 250%;
+  }
+  .menu_button, .res_button {
+    padding: 15px 20px; /* size of button */
+    font-size: 90%;
+  }
+  .res_button {
+    margin-bottom: 1rem;
+  }
+}
+/* Small devices */
+@media (max-width: 600px) {
+  .column { /* makes the two columns stack on top of each other instead of next to each other */
+    flex: 100%;
+    max-width: 100%;
+  }
+  .nav-right {
+    float: right;
+  }
+  main h1 {
+    font-size: 125%;
+  }
+  main p {
+    font-size: 120%;
   }
   #underline {
     font-size: 200%;
   }
   .menu_button, .res_button {
-    padding: 10px 15px; /* size of button */
-    font-size: 70%;
+    padding: 15px 20px; /* size of button */
+    font-size: 80%;
+  }
+  .res_button {
+    margin-bottom: 1rem;
   }
 }
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-.nav-right {
-  float: right;
-}
-
 /* https://www.w3schools.com/cssref/atrule_media.php , https://www.w3schools.com/howto/howto_css_responsive_header.asp */
+/* Max width is set to 1000px - for header & nav so that all nav elements can be accessed */
 @media (max-width: 1000px) {
   header {
     flex-direction: column;
