@@ -127,6 +127,11 @@
     cursor: pointer; 
   }
 
+  .menu_button:hover, .res_button:hover {
+    border-radius: 2rem;
+    transition: border-radius 0.4s ease;
+  }
+
   .text a:hover {
     border-radius: 2rem;
     transition: border-radius 0.4s ease;
@@ -376,6 +381,10 @@ input[type=submit]:hover {
   .contact li {
     font-size: 50%;
   }
+
+  .about p {
+    font-size: 75%;
+  }
 }
 
 /* Small devices */
@@ -446,7 +455,6 @@ input[type=submit]:hover {
   .award_img {
     height: 20px;
     width: auto; 
-
   }
 
   /*
